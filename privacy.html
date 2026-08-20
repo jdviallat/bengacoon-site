@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bengacoon — Politique de confidentialité</title>
+<link rel="icon" href="assets/favicon.png">
+<style>
+  :root{--teal:#2AA5BF;--teal-fonce:#1B7E93;--teal-clair:#7FD0DF;--nuit:#0B1326;--nuit-2:#131C33;--nuage:#F5F7FA;--nuage-2:#EDF1F6;--texte:#1A2233;--muted:#5F6B80}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--texte);background:var(--nuage);line-height:1.65}
+  a{color:var(--teal-fonce)}
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+  header{background:var(--nuit);color:#fff;padding:16px 0}
+  header .wrap{display:flex;align-items:center;gap:12px}
+  header img{width:34px;height:34px;border-radius:8px}
+  header .brand{font-weight:800}
+  header a{margin-left:auto;color:var(--teal-clair);text-decoration:none;font-size:14px;font-weight:600}
+  main{padding:44px 0 60px}
+  h1{font-size:30px;font-weight:800;margin-bottom:6px;color:var(--nuit)}
+  .maj{color:var(--muted);font-size:13px;margin-bottom:26px}
+  h2{font-size:19px;font-weight:800;margin:28px 0 8px;color:var(--nuit)}
+  p,li{font-size:15px;color:#37352f;margin-bottom:8px}
+  ul{padding-left:20px;margin-bottom:8px}
+  .note{background:#fff;border:1px solid var(--nuage-2);border-left:4px solid var(--teal);border-radius:12px;padding:14px 18px;margin:18px 0}
+  footer{background:#070D1B;color:#8FA0B8;text-align:center;padding:24px 0;font-size:13px}
+  footer a{color:var(--teal-clair);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="assets/icon.png" alt="Bengacoon">
+    <span class="brand">Bengacoon</span>
+    <a href="index.html">← Accueil</a>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <h1>Politique de confidentialité</h1>
+    <p class="maj">Éditeur : Bengacoon — Julien Diallat · Contact : jdviallat@gmail.com · Mise à jour : août 2026</p>
+
+    <div class="note"><strong>En résumé :</strong> l'éditeur ne collecte aucune donnée. Tout est stocké dans une base <strong>chiffrée</strong> sur votre appareil. Aucun serveur tiers, aucune publicité, aucun traceur.</div>
+
+    <h2>Données traitées, uniquement en local</h2>
+    <p>Les informations suivantes sont enregistrées dans une base <strong>chiffrée (SQLCipher / AES-256)</strong>, dans le stockage privé de votre appareil, et ne sont jamais envoyées à l'éditeur :</p>
+    <ul>
+      <li>Vos fiches clients : identité, coordonnées, consentement RGPD, historique.</li>
+      <li>Les fiches animaux et leurs photos.</li>
+      <li>Vos rendez-vous et votre agenda interne.</li>
+      <li>Vos notes de séance thérapeutique et vos comptes-rendus de communication animale.</li>
+      <li>Vos paiements et votre chiffre d'affaires.</li>
+      <li>Vos réglages, ainsi qu'un éventuel code PIN, stocké chiffré (EncryptedSharedPreferences).</li>
+    </ul>
+
+    <h2>Vous êtes responsable de traitement</h2>
+    <p>Cette application est un outil professionnel destiné à des praticiens. Les données qu'elle contient concernent <strong>vos clients</strong>. L'éditeur n'y a jamais accès et n'en conserve aucune copie : au sens du RGPD, <strong>vous</strong> en êtes le responsable de traitement. Il vous appartient d'informer vos clients, de recueillir leur consentement, de répondre à leurs demandes d'accès ou d'effacement (la suppression d'un client efface en cascade ses animaux, séances et paiements), et de sécuriser votre appareil en activant le verrouillage biométrique ou par code.</p>
+
+    <h2>Synchronisation Google Agenda (facultative)</h2>
+    <p>Si — et seulement si — vous l'activez, l'application peut écrire vos rendez-vous dans un agenda Google commun. <strong>Aucune note thérapeutique n'y est envoyée.</strong> L'événement créé ne contient que : le client, le type de séance, le thérapeute, le lieu ou le lien de visio, le statut et le tarif. Tout le reste demeure dans la base chiffrée locale. Cette synchronisation est soumise à la politique de confidentialité de Google ; vous pouvez la désactiver ou révoquer l'accès à tout moment depuis votre compte Google.</p>
+
+    <h2>Autorisations et leur usage</h2>
+    <ul>
+      <li><strong>Appareil photo / galerie</strong> : pour ajouter la photo d'un animal ou d'un client. Les images sont compressées et conservées sur l'appareil.</li>
+      <li><strong>Contacts</strong> : uniquement pour pré-remplir une fiche client à votre demande.</li>
+      <li><strong>Internet</strong> : uniquement pour la synchronisation Google si vous l'activez, et pour vérifier l'existence d'une mise à jour.</li>
+      <li><strong>Empreinte / biométrie</strong> : uniquement pour déverrouiller l'app ; gérée par le système, jamais lue par l'app.</li>
+    </ul>
+
+    <h2>Exports et sauvegardes</h2>
+    <p>Les fiches PDF, exports CSV et sauvegardes JSON sont générés sur l'appareil. La sauvegarde complète est <strong>chiffrée en AES-GCM</strong>. Dès que vous partagez un export (email, cloud, impression), sa protection ne dépend plus de l'application : traitez ces fichiers comme des documents confidentiels de santé.</p>
+
+    <h2>Vos droits (RGPD / nLPD)</h2>
+    <p>Aucune donnée n'étant collectée par l'éditeur, il n'existe aucun traitement à distance vous concernant. Pour toute question : jdviallat@gmail.com.</p>
+
+    <h2>Avertissement</h2>
+    <p>Bengacoon est un <strong>outil de gestion de cabinet</strong>. Il n'établit aucun diagnostic, ne propose aucun traitement et ne constitue pas un dispositif médical.</p>
+  </div>
+</main>
+<footer>© 2026 Bengacoon · <a href="index.html">Bengacoon</a></footer>
+</body>
+</html>

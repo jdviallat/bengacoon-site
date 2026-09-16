@@ -1,0 +1,7 @@
+{
+  "version": "4.17.3",
+  "url": "https://github.com/jdviallat/bengacoon-app-site/releases/latest",
+  "notes": "Sauvegarde vraiment complète : les 16 tables du cabinet (dépenses, forfaits, liste d'attente, devis, échéances et indisponibilités comprises) et vos préférences. Une sauvegarde automatique est faite juste après cette mise à jour : c'est elle que la génération suivante de Bengacoon (4.18) reprend intégralement. La vérification de mise à jour fonctionne enfin.",
+  "obligatoire": false,
+  "minVersion": "4.0.0"
+}
